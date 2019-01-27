@@ -1,15 +1,14 @@
 import React from 'react';
 import Me from '../images/me.jpg';
+import {ReactComponent as Sig} from '../images/signature.svg';
 import styled from '../../node_modules/@emotion/styled';
-import SVG from 'react-inlinesvg';
+
 
 const Header = () => {
     return(
         <Hero>
             <div className="image" />
-            <SVG src="../images/signature.svg" >
-                <img src="../images/signature.svg" />
-            </SVG>
+            <Sig />
         </Hero>
     )
 };
@@ -32,5 +31,6 @@ const Hero = styled('div')`
         border-radius: 50%;
         border: 5px solid whitesmoke;
     }
+
 
 `
