@@ -1,13 +1,15 @@
 import React from 'react';
 import Me from '../images/me.jpg';
 import styled from '../../node_modules/@emotion/styled';
-import {ReactComponent as Signature} from '../images/signature.svg';
+import SVG from 'react-inlinesvg';
 
 const Header = () => {
     return(
         <Hero>
             <div className="image" />
-            <Signature />
+            <SVG src="../images/signature.svg" >
+                <img src="../images/signature.svg" />
+            </SVG>
         </Hero>
     )
 };
