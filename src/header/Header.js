@@ -24,8 +24,8 @@ const Hero = styled('div')`
     align-items: center;
     flex-direction: column;
     .image{
-        height: 500px;
-        width: 500px;
+        height: 425px;
+        width: 425px;
         background-image: url(${Me});
         background-size: contain;
         border-radius: 50%;
