@@ -1,20 +1,18 @@
 import React from 'react';
 import Me from '../images/me.jpg';
 import styled from '../../node_modules/@emotion/styled';
+import {ReactComponent as Signature} from '../images/signature.svg';
 
 const Header = () => {
     return(
         <Hero>
             <div className="image" />
-            <h1>Kimberly Scarabello</h1>
+            <Signature />
         </Hero>
     )
 };
 
 export default Header;
-
-//background object
-
 
 //styles
 const Hero = styled('div')`
@@ -23,6 +21,7 @@ const Hero = styled('div')`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
     .image{
         height: 425px;
         width: 425px;
@@ -30,7 +29,6 @@ const Hero = styled('div')`
         background-size: contain;
         border-radius: 50%;
         border: 5px solid whitesmoke;
-
     }
 
 `
