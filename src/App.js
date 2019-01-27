@@ -3,12 +3,6 @@ import './App.css';
 import styled from '../node_modules/@emotion/styled';
 import Header from './header/Header.js';
 import moment from 'moment';
-import tiles from './images/tiles.jpg';
-import pinkleaves from './images/pinkleaves.jpg';
-import coffee from './images/coffee.jpg';
-import graffiti from './images/graffiti.jpg';
-import hearts from './images/hearts.jpg';
-import ferns from './images/ferns.jpg';
 import succulents from './images/succulents.jpg';
 
 class App extends Component {
@@ -23,8 +17,7 @@ class App extends Component {
   }
 
   render() {
-    console.log('hello', images[this.state.today])
-    console.log('appcontainer', AppContainer.__emotion_styles)
+
     return (
       <div>
         { this.state.today ? (
