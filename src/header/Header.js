@@ -2,11 +2,6 @@ import React from 'react';
 import Me from '../images/me.jpg';
 import styled from '../../node_modules/@emotion/styled';
 
-
-
-
-
-
 const Header = () => {
     return(
         <Hero>
