@@ -3,6 +3,7 @@ import './App.css';
 import styled from '../node_modules/@emotion/styled';
 import Header from './header/Header.js';
 import Body from './body/Body.js';
+import TimeLine from './body/TimeLine.js';
 import moment from 'moment';
 import succulents from './images/succulents.jpg';
 import colorfulDesign from './images/colorfulDesign.jpg';
@@ -27,6 +28,7 @@ class App extends Component {
     return (
       <div>
         { today ? (
+          <div>
           <AppContainer imagePath={days[today].path}>
               <Header />
               <PhotoCreditContainer>
@@ -38,11 +40,13 @@ class App extends Component {
                         {days[today].photographer.name}
                         </a>
                     </p>
-                </PhotoCreditContainer>
+                </PhotoCreditContainer>                
               <Body photographer={days[today].photographer} />
           </AppContainer>
+
+          </div>
         ) : (
-          <h1>hi there</h1>
+          <h1>loading...</h1>
         )
         }
       </div>

@@ -30,7 +30,6 @@ const Hero = styled('div')`
         background-size: contain;
         border-radius: 50%;
         border: 5px solid whitesmoke;
+        animation: pulse 2s infinite;
     }
-
-
 `
