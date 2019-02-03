@@ -72,8 +72,9 @@ const TimeLine = () => (
                 iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                 // icon={<SchoolIcon />}
             >
-                <h3 className="vertical-timeline-element-title">AmeriCorps NCCC</h3>
+                <h3 className="vertical-timeline-element-title">AmeriCorps NCCC - Atlantic Region</h3>
                 <h4 className="vertical-timeline-element-subtitle">Member Support Specialist</h4>
+                <h6 className="vertical-timeline-element-subtitle">Baltimore, MD </h6>
                 <p>
                 I fulfilled one of my dreams of working for AmeriCorps NCCC as a staff member. My title was Assistant Member Support Specialist. The role was comparable to that of a Human Resource administrator. During my tenure, I was promoted to Member Support Specialist. Along the way, I learned a lot about managing an HR department, and also about life (thanks to the incredible young adults who went through our program).
                 </p>
@@ -98,12 +99,13 @@ const TimeLine = () => (
             >
                 <h3 className="vertical-timeline-element-title">AmeriCorps NCCC - Pacific Region*</h3>
                 <h4 className="vertical-timeline-element-subtitle">Corps Member and Team Leader</h4>
+                <h6 className="vertical-timeline-element-subtitle">Sacramento, CA </h6>
                 <p>
                 If you've never heard of AmeriCorps NCCC (most haven't), please click <a href={`https://www.facebook.com/AmeriCorpsNCCC/`}>here</a> to learn more.
                 </p>
                 <p>I traveled across the western US completing 6-8 week service projects with 9 of my closest friends. We shared housing, food, a 16-passenger van, adventures, gripes, and so much more. I got to do projects in homeless shelters, national parks, summer camps, community gardens, non-profit offices and more. </p>
                 <p>I signed on for a second term as a Team Leader. Being a TL is basically being a supervisor on steroids. I had to be a supervisor, disciplinarian, team-builder, occasional stand-in mom 24 hours a day for 10 months, all while completing rigorous service projects, including a Hurricane Sandy disaster relief hitch. </p>
-                <p style={{fontSize: '10px'}}>* Richest experience of my entire life. I wish every human being had the opportunity to do this. You reaaaaaally need to click that link and learn more about this program. It's unbelievable.</p>
+                <p style={{fontSize: '10px'}}>* Richest experience of my entire life. I wish every human being had the opportunity to do this. You reaaaaaally need to click that link and learn more about this program. It's unbelievable. Feel free to ask me about my experience here - I'll love it.</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"

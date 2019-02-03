@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '../../node_modules/@emotion/styled';
+import TimeLine from './TimeLine.js';
 
 const Body = (photographer) => (
     <Container>
@@ -26,6 +27,7 @@ class Tabs extends React.Component{
                     <li onClick={() => this.tabSelect('myProjects')}>My Projects</li>
                     <li onClick={() => this.tabSelect('art')}>Art</li>
                 </TabStyles>
+                {/* <TimeLine /> */}
             </div>
         )
     }
