@@ -13,21 +13,27 @@ const Body = (photographer) => (
 );
 export default Body
 
+//styled-components
+const Container = styled('div')`
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+
 class Tabs extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            selectedTab: 'about'
-        
-        
+            selectedTab: 'about'        
         }
     }
 
     tabSelect = (tabselected) => {this.setState({selectedTab: tabselected})};
     render(){
-        console.log('photographer', this.props.photogName)
         return(
-            <div>
+            <TabContentContainer>
                 <TabStyles>
                     <li onClick={() => this.tabSelect('about')}>About</li>
                     <li onClick={() => this.tabSelect('workingOn')}>What am I working on?</li>
@@ -35,9 +41,10 @@ class Tabs extends React.Component{
                     <li onClick={() => this.tabSelect('projects')}>My Projects</li>
                     <li onClick={() => this.tabSelect('art')}>Art</li>
                 </TabStyles>
+                <TabContents>
                 { tabIndex[this.state.selectedTab] }
-
-            </div>
+                </TabContents>
+            </TabContentContainer>
         )
     }
 }
@@ -50,16 +57,15 @@ const tabIndex = {
     art: <Art />
 }
 
-
-//styled-components
-const Container = styled('div')`
-    width: 80vw;
+const TabContentContainer = styled('div')`
+    width: 100vw;
+    height: 156px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
+    align-items:center;
+    flex-direction: column;
 `
+
 const TabStyles = styled('ul')`
     display: flex;
     justify-content: space-between;
@@ -69,4 +75,11 @@ const TabStyles = styled('ul')`
     background-color: #2C232D;
     color: whitesmoke;
     height: 72px;
+`
+
+const TabContents = styled('div')`
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #2C232D;
 `
