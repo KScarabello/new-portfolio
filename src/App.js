@@ -110,10 +110,11 @@ const days = {
 
 //styled-component
 const AppContainer = styled('div')`
-  width: 100vw;
-  height: 100vh;
+  // width: 100vw;
+  // height: 100%;
   background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(${props => props.imagePath});
-  background-size: cover;
+  background-size: 100vw 100vh;
+  background-repeat: repeat;
   display: flex;
   justify-content: center;
   align-items: center;

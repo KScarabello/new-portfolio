@@ -59,7 +59,7 @@ const tabIndex = {
 
 const TabContentContainer = styled('div')`
     width: 100vw;
-    height: 156px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -79,6 +79,7 @@ const TabStyles = styled('ul')`
 
 const TabContents = styled('div')`
     width: 80vw;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     background-color: #2C232D;
